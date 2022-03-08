@@ -1,0 +1,49 @@
+@import '@/styles';
+
+@switch-w: 52px;
+@switch-h: 24px;
+@range-w-h: 20px;
+@switch-trans: @switch-w - @switch-h;
+
+.@{project-prefix}-comp-switch {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: @switch-w;
+  height: @switch-h;
+  border-radius: @switch-h;
+  padding: 2px 8px;
+  box-sizing: border-box;
+  background: var(--text-color);
+  transition: background-color 0.3s;
+  user-select: none;
+  overflow: hidden;
+  cursor: pointer;
+  .switch-range {
+    position: absolute;
+    width: @range-w-h;
+    height: @range-w-h;
+    top: (@switch-h - @range-w-h) / 2;
+    left: 2px;
+    transform: translate(0, 0);
+    border-radius: 50%;
+    background: #fff;
+    transition: transform 0.3s;
+  }
+
+  .switch-on, .switch-off {
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  &.switch-checked {
+    justify-content: flex-start;
+    background: var(--primary-color);
+    .switch-range {
+      transform: translate(@switch-trans, 0);
+    }
+  }
+}

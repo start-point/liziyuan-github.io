@@ -1,0 +1,156 @@
+.fade-enter,
+.fade-appear {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.fade-enter-done {
+  opacity: 1;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.fade-exit-done {
+  opacity: 0;
+}
+
+.side-up-fade-enter,
+.side-up-fade-appear {
+  transform: translate(0, 10px);
+  opacity: 0;
+}
+
+.side-up-fade-enter-done {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 300ms;
+}
+.side-up-fade-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.side-up-fade-exit-active {
+  opacity: 0;
+  transform: translate(0, 10px);
+  transition: all 300ms;
+}
+.side-up-fade-exit-done {
+  opacity: 0;
+  transform: translate(0, 10px);
+}
+
+// sideLeftFade
+.side-left-fade-enter,
+.side-left-fade-appear {
+  transform: translate(60px, 0);
+  opacity: 0;
+}
+
+.side-left-fade-enter-done {
+  // opacity: 1;
+  // transform: translate(0, 0);
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 300ms;
+}
+.side-left-fade-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.side-left-fade-exit-active {
+  opacity: 0;
+  transform: translate(60px, 0);
+  transition: all 300ms;
+}
+.side-left-fade-exit-done {
+  opacity: 0;
+  transform: translate(60px, 0);
+}
+
+.side-low-left-fade-enter,
+.side-low-left-fade-appear {
+  transform: translate(10px, 0);
+  opacity: 0;
+}
+
+.side-low-left-fade-enter-done {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 300ms;
+}
+.side-low-left-fade-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.side-low-left-fade-exit-active {
+  opacity: 0;
+  transform: translate(10px, 0);
+  transition: all 300ms;
+}
+.side-low-left-fade-exit-done {
+  opacity: 0;
+  transform: translate(10px, 0);
+}
+
+// sideLeft
+.side-left-enter,
+.side-left-appear {
+  opacity: 1;
+  transform: translate(200%, 0);
+}
+//
+.side-left-enter-done {
+  transform: translate(0, 0);
+  transition: transform 500ms;
+}
+.side-left-exit {
+  transform: translate(0, 0);
+}
+.side-left-exit-active {
+  transform: translate(200%, 0);
+  transition: transform 500ms;
+}
+.side-left-exit-done {
+  transform: translate(200%, 0);
+}
+
+@keyframes rotateMusicLogo {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotateMusicLogo {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotateMusicLogo {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

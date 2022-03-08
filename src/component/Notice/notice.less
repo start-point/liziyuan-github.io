@@ -1,0 +1,63 @@
+@import '@/styles';
+
+
+.@{project-prefix}-comp-notice {
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  &.notice-success {
+    color: @success-color;
+    &.light {
+      background: @success-color-low;
+    }
+    &.dark {
+      color: darken(@success-color, 26%);
+      background: @success-color-deep;
+    }
+  }
+
+  &.notice-error {
+    color: @error-color;
+    &.light {
+      background: @error-color-low;
+    }
+    &.dark {
+      color: darken(@error-color, 26%);
+      background: @error-color-deep;
+    }
+  }
+
+  &.notice-warning {
+    color: @warning-color;
+    &.light {
+      background: @warning-color-low;
+    }
+    &.dark {
+      color: darken(@warning-color, 26%);
+      background: @warning-color-deep;
+    }
+  }
+
+  &.notice-info {
+    color: @primary-color;
+    &.light {
+      background: @primary-color-low;
+    }
+    &.dark {
+      color: darken(@primary-color, 26%);
+      background: @primary-color-deep;
+    }
+  }
+  
+  &.notice-default {
+    color: @default-color;
+    &.light {
+      background: @default-color-low;
+    }
+    &.dark {
+      color: darken(@default-color, 26%);
+      background: @default-color-deep;
+    }
+  }
+}

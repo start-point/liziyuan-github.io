@@ -1,0 +1,70 @@
+@import '@/styles';
+
+.@{project-prefix}-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: @nav-height;
+  z-index: @z-index-nav;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 1px 1px 25px 0 var(--shadow-color);
+  transition: background-color, color, box-shadow 0.3s;
+  .nav-switch {
+    position: absolute;
+    right: 1%;
+    top: 32%;
+  }
+  .nav-content {
+    width: @container-width;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    .nav-logo {
+      .nav-img {
+        height: 50px;
+      }
+    }
+    .nav-lists {
+      height: 100%;
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .nav-list {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 15px;
+        margin: 0 10px;
+        text-decoration: none;
+        position: relative;
+        transition: all 0.3s;
+        overflow: hidden;
+        font-size: 14px;
+        transition: color, background-color 0.3s;
+        &::after {
+          content: '';
+          position: absolute;
+          background: var(--primary-color);
+          bottom: 7px;
+          left: 27%;
+          width: 0;
+          height: 2px;
+          border-radius: 4px;
+          transition: all 0.3s;
+        }
+        &.active {
+          &::after {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
