@@ -2,7 +2,7 @@
   "name": "vite-react-ts-eslint",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://liziyuan-github.io/theApp",
+  "homepage": "https://liziyuan-github.io",
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build",
