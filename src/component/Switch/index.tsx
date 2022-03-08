@@ -31,7 +31,7 @@ const Switch = (props: ISwitchProps) => {
   });
 
   return (
-    <div className={classString} onClick={setCheckedHandle}>
+    <button className={classString} onClick={setCheckedHandle}>
       <CSSTransition
         in={checked}
         timeout={1}
@@ -49,7 +49,7 @@ const Switch = (props: ISwitchProps) => {
         <span className="switch-off">{props.unCheckedName}</span>
       </CSSTransition>
       <span className="switch-range"></span>
-    </div>
+    </button>
   );
 };
 

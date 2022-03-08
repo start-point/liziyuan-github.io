@@ -19,6 +19,8 @@
   transition: background-color 0.3s;
   user-select: none;
   overflow: hidden;
+  outline: none;
+  border: none;
   cursor: pointer;
   .switch-range {
     position: absolute;
@@ -32,13 +34,14 @@
     transition: transform 0.3s;
   }
 
-  .switch-on, .switch-off {
+  .switch-on,
+  .switch-off {
     color: #fff;
     vertical-align: middle;
     text-align: center;
     font-size: 14px;
   }
-  
+
   &.switch-checked {
     justify-content: flex-start;
     background: var(--primary-color);
