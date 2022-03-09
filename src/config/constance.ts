@@ -46,6 +46,7 @@ export const NAV_INFO = {
   TITLE_HOME: '首页',
   TITLE_USER: '个人',
   TITLE_LINK_URL: '常用链接',
+  TITLE_SEARCH: '网易云',
 };
 
 // 底部 copyright 配置

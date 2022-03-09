@@ -1,0 +1,46 @@
+@import '@/styles';
+
+.@{project-prefix}-music-search {
+  overflow: hidden;
+  width: @container-width;
+  margin: 0 auto;
+  &-entry {
+    position: relative;
+    height: 36px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    margin-bottom: 60px;
+    transition: all 0.3s;
+    &-input {
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid var(--auto-color);
+      height: 36px;
+      width: 320px;
+      font-size: 16px;
+      color: var(--auto-color);
+    }
+  }
+  &-group {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    padding: 0 30px;
+    box-sizing: border-box;
+    &.show {
+      bottom: 20px;
+      overflow: auto;
+    }
+  }
+  &.input-active {
+    justify-content: flex-start;
+    .liziyuan-react-web-music-search-entry {
+      margin-top: 10px;
+    }
+  }
+}

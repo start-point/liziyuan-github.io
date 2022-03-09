@@ -3,6 +3,7 @@ import { lazy } from 'react';
 import { NAV_INFO } from '@/config/constance';
 import { IRoute } from '@/types/route';
 const OneUser = lazy(() => import('@/pages/oneUser'));
+const Search = lazy(() => import('@/pages/search'));
 const LinkUrl = lazy(() => import('@/pages/linkUrl'));
 const Home = lazy(() => import('@/pages/home'));
 
@@ -21,6 +22,14 @@ const routes: IRoute[] = [
     hidden: true,
     meta: {
       title: NAV_INFO.TITLE_USER,
+    },
+  },
+  {
+    path: '/search',
+    component: Search,
+    hidden: true,
+    meta: {
+      title: NAV_INFO.TITLE_SEARCH,
     },
   },
   {
